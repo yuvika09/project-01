@@ -10,10 +10,10 @@ export default function Nav() {
                 <li><NavLink to="/login" className='link-class'> Log In </NavLink></li>
                 <li><NavLink to="/admin/yuvi/singh" className='link-class'> Admin </NavLink></li>
             </ul>
-            {/* <div>
+            <div>
                 <input type="text" placeholder='Search' className='search-bar' />
                 <button className='search-btn'>Search</button>
-            </div> */}
+            </div>
         </div>
     );
 }

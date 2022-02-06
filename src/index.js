@@ -9,8 +9,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-//"homepage": "https://yuvika09.github.io/newproj",
-
-//    "predeploy": "npm run build",
-// "deploy": "gh-pages -d build", (script)

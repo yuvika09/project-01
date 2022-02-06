@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Common.css';
@@ -55,27 +56,28 @@ const LogInPage = () => {
         }
     }, [formErrors]);
 
-    
+    const baseUrl = "https://jsonplaceholder.typicode.com/posts";
     const saveUser = () => {
-        fetch("https://jsonplaceholder.typicode.com/posts", {
-            method: 'POST',
-            headers: {
-                'Access-Control-Allow-Origin': '*',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formValue)
-        })
-        .then(response => {
-            console.log("Response", response);
-            if(response.state == 201) {
-                alert("Success")
-            }
-        })
-        .catch(e => {
-            console.log("e", e);
-        })
+        axios.post(baseUrl, { formValue })
+            // fetch("https://jsonplaceholder.typicode.com/posts", {
+            //     method: 'POST',
+            //     headers: {
+            //         'Access-Control-Allow-Origin': '*',
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify(formValue)
+            // })
+            .then(response => {
+                console.log("Response", response);
+                if (response.status == 201) {
+                    alert("Success")
+                }
+            })
+            .catch(error => {
+                console.log("Error is ", error);
+            })
     };
-    
+
     return (
         <>
             <div id="big-container">
