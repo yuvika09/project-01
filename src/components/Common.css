@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+#big-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(248, 224, 224);
+  height: 92vh;
+}
+
+.small-container {
+  border: 2px solid black;
+  height: 68%;
+  width: 33%;
+  border-radius: 10px;
+  box-shadow:20px 20px 50px grey; 
+}
+
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 5%;
+  padding: 14px;
+  font-size: 200%;
+}
+
+#side-heading {
+  margin-top: 23%;
+}
+
+#signup-side {
+  background-color: white;
+  border: white;
+}
+
+#login-side {
+  background-color: rgb(202, 66, 66);
+  border: rgb(236, 131, 131);
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#big-container button {
+  border-radius: 20px;
+  background-color: rgb(202, 66, 66);
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 13px 23px;
+  margin: 10px;
+  border: brown;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+#login-side button {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 750;
+}
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 40px 25px 40px;
+  font-size: 120%;
+}
+
+#big-container input {
+  background-color: #eee;
+  border: none;
+  padding: 10px 15px;
+  margin: 8px 0;
+  width: 86%;
+}
+
+form {
+  text-align: center;
+}
+
+.error {
+  color: rgb(175, 16, 16);
+}
+
+#login-heading {
+  padding-top: 10%;
+  padding-bottom: 8%;
+}
+
+.form-inputs-login {
+  margin: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #signup-container {
+    background-color: rgba(129, 248, 248, 0.66);
+    width: 40%;
+    margin-top: 8%;
+    margin-left: 30%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 3% 1%;
+  } */

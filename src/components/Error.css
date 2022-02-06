@@ -1,0 +1,17 @@
+.err-container {
+    display: flex;
+    align-items: center;
+}
+.err-text {
+    font-size: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.err-para {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.err-img {
+    width: 46%;
+    margin-right: 10px;
+}
