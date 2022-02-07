@@ -9,6 +9,7 @@ import {
   Route,
   BrowserRouter
 } from "react-router-dom";
+import Homepage from './components/Homepage';
 
 function App() {
 
@@ -16,9 +17,10 @@ function App() {
     <BrowserRouter>
       <Nav />
       <Switch>
-        <Route exact path="/" component={SignUp} />
-        <Route path="/login" component={LogIn} />
+        <Route path="/project-01" component={Homepage} />
         <Route path="/admin/:head/:name" component={Admin} />
+        <Route path="/signup" component={SignUp} />
+        <Route path="/login" component={LogIn} />
         <Route component={Errorpg}></Route>
       </Switch>
     </BrowserRouter>
